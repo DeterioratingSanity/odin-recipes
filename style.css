@@ -41,6 +41,7 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     max-width: 820px;
+    gap: 25px;
 }
 
 .recipe-tag{
@@ -54,7 +55,6 @@ a{
     height: 300px;
     width: 200px;
 
-    margin: 15px;
     padding: 20px;
 
     border-radius: 1em;
@@ -64,4 +64,14 @@ a{
 .recipe-tag:hover{
     transform: scale(103%);
     transition: 0.8s;
+}
+
+@media screen and (max-width: 820px){
+    #home-organizer{
+        min-height: 1300px;
+        justify-content: flex-start;
+    }
+    #recipe-organizer{
+        flex-direction: column;
+    }
 }
