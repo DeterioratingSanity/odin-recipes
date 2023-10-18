@@ -25,6 +25,7 @@ a{
     margin: 0 auto;
     min-height: 95vh;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 #recipe-title{
@@ -32,7 +33,7 @@ a{
     color: rgb(255, 153, 0);
     text-shadow: 3px 3px white, -3px 3px white, 3px -3px white, -3px -3px white; 
     font-size: 4em;
-    margin: 15px 25px;
+    margin: 0 25px;
 }
 
 #recipe-organizer{
@@ -63,15 +64,59 @@ a{
 
 .recipe-tag:hover{
     transform: scale(103%);
+    box-shadow: 3px 3px rgb(201, 145, 59);
+    transition: 0.8s;
+}
+
+#nav--back{
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 190, 92);
+    box-shadow: 6px 6px rgb(201, 145, 59);
+    transition: 0.3s;
+}
+#nav--back:hover{
+    transform: scale(105%);
+    box-shadow: 2px 2px rgb(201, 145, 59);
+    transition: 0.8s;
+}
+
+#foot-outer{
+    margin: 5px 25px; 
+    font-family: sans-serif; 
+}
+#foot-inner{
+    color: white; 
+    background-color: rgb(255, 190, 92); 
+    border-radius: 1.3em; 
+    padding: 10px 25px; 
+    font-weight: bold; 
+    box-shadow: 7px 7px rgb(201, 145, 59);
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#foot-inner:hover{
+    transform: scale(103%);
+    box-shadow: 1px 1px rgb(201, 145, 59);
     transition: 0.8s;
 }
 
 @media screen and (max-width: 820px){
     #home-organizer{
-        min-height: 1300px;
+        min-height: 1350px;
         justify-content: flex-start;
+        max-width: 340px;
+        margin: 0 auto;
     }
     #recipe-organizer{
         flex-direction: column;
+    }
+
+    #foot-outer{
+        margin: 5px 50px; 
     }
 }
